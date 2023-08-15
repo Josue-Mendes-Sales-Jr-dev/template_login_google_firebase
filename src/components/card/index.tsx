@@ -8,7 +8,7 @@ interface CardProps{
 export const Card = (props:CardProps)=>{
     return(
         <>
-        <form action="#" className="flex w-[18rem] lg:w-1/4 flex-col items-center justify-center gap-5 p-8 rounded-lg bg-white">
+        <form action="#" className="flex w-[18rem] :w-1/4 flex-col items-center justify-center gap-5 p-8 rounded-lg bg-white">
             <h2 className="text-center text-[1.4rem] w-[20rem]">
                 <strong>{props.title}</strong>
             </h2>

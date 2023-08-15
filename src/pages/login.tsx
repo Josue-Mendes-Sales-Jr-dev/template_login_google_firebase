@@ -4,6 +4,8 @@ import { Input } from "@/components/input";
 import Link from "next/link";
 import { useState } from "react";
 import UseAuthCtx from "@/hook/useAuthContext";
+import Image from "next/image";
+import Img from "../../public/img/photo.png"
 
 export default function Login() {
       const[email, setEmail]=useState('')
@@ -14,6 +16,9 @@ export default function Login() {
     return(
         <>
         <div className="w-screen h-[100vh] flex items-center justify-center">
+            <div className="relative lg:flex items-center justify-center hidden w-1/2 h-full">
+                <Image src={Img} alt='wallpaper' className=" absolute lg:w-[40rem] h-[100%] "/>
+            </div>
             <Card title="Login">
             <Input type="email" placeHolder="Digite seu email" value={email} onChange={e=>setEmail(e.target.value)}/>
             <Input type="password" placeHolder="Digite sua senha" value={password} onChange={e=>setPassword(e.target.value)}/>

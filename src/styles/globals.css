@@ -6,5 +6,5 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: black;
+  background:rgb(139, 139, 139);
 }
